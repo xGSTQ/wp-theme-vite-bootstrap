@@ -1,6 +1,6 @@
 <?php
 /*
- * VITE & Tailwind JIT development
+ * VITE & Bootstrap 5 JIT development
  * Inspired by https://github.com/andrefelipe/vite-php-setup
  *
  */
@@ -19,6 +19,16 @@ define('JS_LOAD_IN_FOOTER', true); // load scripts in footer?
 // deafult server address, port and entry point can be customized in vite.config.json
 define('VITE_SERVER', 'http://localhost:3000');
 define('VITE_ENTRY_POINT', '/main.js');
+
+
+
+// enqueue custom fonts
+function vite_custom_fonts() { 
+  wp_enqueue_style( 'my-custom-fonts', get_template_directory_uri() . '/assets/fonts/custom-fonts.css', false );
+}
+add_action( 'wp_enqueue_scripts', 'vite_custom_fonts');
+
+
 
 // enqueue hook
 add_action( 'wp_enqueue_scripts', function() {
@@ -58,9 +68,7 @@ add_action( 'wp_enqueue_scripts', function() {
                 }
                 
             }
-
         }
-
     }
 
 

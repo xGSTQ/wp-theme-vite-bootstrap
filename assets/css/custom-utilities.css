@@ -2,10 +2,3 @@ body {
     --background-color: grey;
     --color: red;
 }
-
-.main-menu {
-    .current-menu-item,
-    .current_page_item {
-        @apply underline;
-    }
-}

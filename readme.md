@@ -1,6 +1,6 @@
-# Boilerplate Wordpress Theme with Tailwindcss & Vite
+# Boilerplate Wordpress Theme with Bootstrap & Vite
 
-Example of using Vite + TailwindCSS in Wordpress Theme development. Auto generating CSS, auto refresh on every file save/edit and easy production build tool with no hassle.
+Example of using Vite + Bootstrap 5.2 in Wordpress Theme development. Auto generating CSS, auto refresh on every file save/edit and easy production build tool with no hassle.
 Inspired by https://github.com/vitejs/vite/issues/341
 
 <img src="assets/img/hello-world.jpg" width="100%">
@@ -8,7 +8,7 @@ Inspired by https://github.com/vitejs/vite/issues/341
 ## Main features
 
 - fast Auto browser refresh/sync file change/save
-- built in Tailwindcss Just-in-time compiler
+- built in Bootstrap 5.2
 - extremely small CSS as there is no unsued css at all
 - keep your local domain while developing
 - `npm run build` for production packing Javascript and CSS
@@ -107,10 +107,10 @@ mkcert localhost
 
 More info on the links below
 - https://vitejs.dev/config/
-- https://tailwindcss.com/
+- https://getbootstrap.com/docs/5.0/getting-started/introduction/
 
 Visual Studio Code Tailwind Intellisense plugin is a must.
-https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
+https://marketplace.visualstudio.com/items?itemName=AnbuselvanRocky.bootstrap5-vscode
 
 ---
 That's it.

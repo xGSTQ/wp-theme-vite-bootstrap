@@ -1,7 +1,10 @@
 console.log('main.js')
 
 // get styles
-import "./assets/css/styles.css"
+// import "./assets/css/styles.css"
+
+// get scss styles
+import "./assets/css/styles.scss"
 
 // get scripts
 import './assets/js/scripts.js'

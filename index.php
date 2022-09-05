@@ -1,33 +1,101 @@
 <?php get_header() ?>
 
-<div class="max-w-screen-lg mx-auto h-full flex place-content-center items-center">
-    <div class="text-center">
-        <h1 class="text-4xl font-bold text-black">Hello World!</h1>
-        <h2 class="text-xl font-bold text-black">Wordpress Theme rapid development using Vite & Tailwindcss</h2>
-        <div class="text-md mt-4">
-            <a class="inline-block rounded-lg my-1 py-1 px-4 text-white bg-purple-700 hover:opacity-90" href="https://vitejs.dev/" target="_blank">ViteJS</a>
-            <a class="inline-block rounded-lg my-1 py-1 px-4 text-white bg-green-600 hover:opacity-90" href="https://tailwindcss.com/" target="_blank">TailwindCSS</a>
-        </div>
+<section class="container-fluid bg-primary text-white">Hello Bootstrap</section>
 
-        <p class="mt-4 text-sm">To test browser sync in development mode ensure the following:</p>
-        <code class="mt-1 px-4 py-1 bg-slate-800 text-gray-200 text-xs text-left inline-block">
-            <p class="my-2">
-                <span class="text-gray-500 block">// change IS_VITE_DEVELOPMENT to TRUE in functions.php</span>
-                define('IS_VITE_DEVELOPMENT', TRUE);
-            </p>
-            <p class="my-2">
-                <span class="text-gray-500 block">// run first time in your theme folder (node.js required)</span>
-                npm install
-            </p>
-            <p class="my-2">
-                <span class="text-gray-500 block">// start development & refresh your browser</span>
-                npm run dev
-            </p>
-        </code>
 
-        <p class="mt-1 text-xs">More instructions <a class="hover:underline" href="https://github.com/blonestar/wp-theme-vite-tailwind" target="_blank">here</a>.</p>
 
-    </div>
+
+
+<div class="container">
+  <div class="row col-8 offset-2 align-items-start">
+  <div class="col-md-4">
+
+<!-- Card -->
+<div class="card card-sm rounded-top-start rounded-bottom-end lift lift-lg mt-6">
+
+  <!-- Image -->
+  <img class="card-img-top rounded-top-start" src="<?php echo get_template_directory_uri(); ?>/assets/img/blog/post-header-10.png" alt="...">
+
+  <!-- Body -->
+  <div class="card-body">
+
+    <!-- Heading -->
+    <h2 class="mb-2">
+      Design component systems, not pages.
+    </h2>
+
+    <!-- Text -->
+    <p class="fs-sm mb-4">
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
+    </p>
+
+    <!-- Link -->
+    <a class="stretched-link" href="../blog-post.html"></a>
+
+  </div>
 </div>
+
+</div>
+<div class="col-md-4">
+
+                <!-- Card -->
+                <div class="card card-sm rounded-top-start rounded-bottom-end lift lift-lg mt-6">
+
+                  <!-- Image -->
+                  <img class="card-img-top rounded-top-start" src="<?php echo get_template_directory_uri(); ?>/assets/img/blog/post-header-11.png" alt="...">
+
+                  <!-- Body -->
+                  <div class="card-body">
+
+                    <!-- Heading -->
+                    <h2 class="mb-2">
+                      Run your business on profit, not credit.
+                    </h2>
+
+                    <!-- Text -->
+                    <p class="fs-sm mb-4">
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
+                    </p>
+
+                    <!-- Link -->
+                    <a class="stretched-link" href="../blog-post.html"></a>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-4">
+
+                <!-- Card -->
+                <div class="card card-sm rounded-top-start rounded-bottom-end lift lift-lg mt-6">
+
+                  <!-- Image -->
+                  <img class="card-img-top rounded-top-start" src="<?php echo get_template_directory_uri(); ?>/assets/img/blog/post-header-12.png" alt="...">
+
+                  <!-- Body -->
+                  <div class="card-body">
+
+                    <!-- Heading -->
+                    <h2 class="mb-2">
+                      Write documentation for everything.
+                    </h2>
+
+                    <!-- Text -->
+                    <p class="fs-sm mb-4">
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
+                    </p>
+
+                    <!-- Link -->
+                    <a class="stretched-link" href="../blog-post.html"></a>
+
+                  </div>
+                </div>
+
+              </div>
+  </div>
+</div>         
+
+    
+
 
 <?php get_footer() ?>

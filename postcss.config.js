@@ -1,7 +1,8 @@
 module.exports = {
+
+  // https://github.com/postcss/postcss/blob/main/docs/plugins.md
   plugins: {
-    'tailwindcss': {},
-    "autoprefixer": {},
+    'autoprefixer': {},
     'postcss-nested': {}
   }
 }

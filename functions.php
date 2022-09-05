@@ -1,6 +1,6 @@
 <?php
 
-// funtions.php is empty so you can easily track what code is needed in order to Vite + Tailwind JIT run well
+// funtions.php is empty so you can easily track what code is needed in order to Vite + Bootstrap JIT run well
 
 
 // Main switch to get fontend assets from a Vite dev server OR from production built folder

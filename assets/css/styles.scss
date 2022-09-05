@@ -1,0 +1,206 @@
+// Import all of Bootstrap's CSS
+// https://getbootstrap.com/docs/5.2/getting-started/vite/
+// @import "bootstrap/scss/bootstrap";
+
+
+
+
+
+// Or only import parts of Bootstrap you need
+// https://getbootstrap.com/docs/5.2/customize/sass/#importing
+
+
+// Required - Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "bootstrap/scss/functions";
+
+// Default variable overrides
+$body-color:      #1b1642;
+$body-bg:         #FFF;
+
+// Navbar
+// https://getbootstrap.com/docs/5.2/components/navbar/#sass-variables
+$navbar-brand-font-size: 1.75rem;
+$navbar-brand-margin-end: 1rem;
+$navbar-padding-x:      2rem;
+
+// Typogrophy
+// https://getbootstrap.com/docs/5.2/content/typography/#variables
+$font-family-base:      "DM Sans", sans-serif;
+$font-size-base:        1.125rem;
+$line-height-base:      1.6;
+$link-color:          #1b1642;
+
+$headings-font-family:  "DM Serif Display", serif;
+$headings-font-weight:  500;
+
+$display-font-weight:   500;
+$display-line-height:   1.08;
+
+$lead-font-weight:      400;
+
+// Buttons
+// https://getbootstrap.com/docs/5.2/components/buttons/#variables
+$btn-border-radius:    .5rem 0 .5rem 0;
+$btn-border-radius-sm: .5rem 0 .5rem 0;
+$btn-border-radius-lg: .5rem 0 .5rem 0;
+
+$btn-font-size:        1.125rem;           
+$btn-font-size-sm:     .875rem;            
+$btn-font-size-lg:     1.125rem;           
+
+$btn-padding-y:        .75rem;             
+$btn-padding-x:        1.75rem;            
+$btn-padding-y-sm:     .5rem;              
+$btn-padding-x-sm:     1rem;               
+$btn-padding-y-lg:     1rem;               
+$btn-padding-x-lg:     2.25rem;            
+
+$btn-font-weight:      500;   
+
+/* Change Bootstrap colors */
+$primary:   #6658ea;
+$secondary: #575a7b;
+$success:   #2cd4a2;
+$info:      #0dcaf0;
+$warning:   #f5c070;
+$danger:    #f9655b;
+$light:     #f3f8ff;
+$dark:      #1b1642;
+$grey:      #575a7b;
+
+/* Custom colours */
+$blue:      #0d6efd;
+$indigo:    #6610f2;
+$purple:    #6f42c1;
+$pink:      #d63384;
+$yellow:    #ffc107;
+$teal:      #20c997;
+
+/* Custom Greys */
+$white:     #fff;   
+$gray:      #575a7b;
+$gray-dark: #342e6c;
+$gray-100:  #f3f8ff;
+$gray-200:  #eaf2fe;
+$gray-300:  #dce0f3;
+$gray-400:  #ced4da;
+$gray-500:  #8d9aae;
+$gray-600:  #575a7b;
+$gray-700:  #495057;
+$gray-800:  #342e6c;
+$gray-900:  #2b265a;
+$black:     #000;   
+
+// Required - Include remainder of required Bootstrap stylesheets
+@import "bootstrap/scss/variables";
+
+// Modify map
+$theme-colors: ("primary": $primary,
+"secondary": $secondary,
+"success":   $success,  
+"info":      $info,     
+"warning":   $warning,  
+"danger":    $danger,   
+"light":     $light,    
+"dark":      $dark,     
+"grey":      $grey 
+);
+
+$custom-colors: ("blue": $blue,
+"indigo":     $indigo,
+"purple":     $purple,
+"pink":       $pink,  
+"yellow":     $yellow,
+"teal":       $teal,  
+"white":      $white 
+  );
+
+// Remove from maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// Required - Include remainder of required parts
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+
+// Optionally include any other parts as needed
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+
+// Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "bootstrap/scss/utilities/api";
+
+// Add any additional custom code below
+
+
+
+
+
+/*
+ * uncomment if adding custom base styles
+@import "./custom-base-styles.css";
+*/
+
+/*
+ * uncomment if adding custom commponents
+@import "./custom-components.css";
+*/
+
+/*
+ * uncomment if adding custom utilities
+@import "./custom-utilities.css";
+*/
+
+/* Admin bar fix */
+body.admin-bar {
+  max-height: calc(100vh - 32px);
+}
+
+
+
+// Start Custom Styles
+
+// Header Nav
+.navbar-brand {
+  font-family: "DM Serif Display", serif;
+}
+
+// Buttons
+.btn-rounded {
+  border-radius: 0.5rem;
+}
+
+.lift {
+  transition: box-shadow .25s ease, transform .25s ease;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 1rem 2.5rem rgba(27, 22, 66, 0.1), 0 0.5rem 1rem -0.75rem rgba(27, 22, 66, 0.1);
+    transform: translate3d(0, -3px, 0)
+  }
+
+  &-lg:hover,
+  &-lg:focus {
+    box-shadow: 0 1rem 5rem rgba(27,22,66,0.1), 0 2rem 3rem -1rem rgba(27,22,66,0.05);
+    transform: translate3d(0, -5px, 0)
+  }
+}
+
+.btn-white {
+  box-shadow: 0 0 6px rgba(27, 22, 66, .03), 0 14px 24px rgba(27, 22, 66, .06);
+  color: #6658ea;
+
+  &:hover,
+  &:focus {
+    color: #1B1642;
+  }
+}
+
+
